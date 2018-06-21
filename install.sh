@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## install dependencies
-yum install -y vim wget unzip net-tools openssl-devel python bind-utils
+yum install -y vim wget unzip net-tools openssl-devel python bind-utils qrencode jq
 
 
 ## install ssr & bbr
