@@ -32,7 +32,7 @@ ssr_link_qr(){
 	SSRobfs=$(echo ${ss_obfs} | sed 's/_compatible//g')
 	SSRPWDbase64=$(urlsafe_base64 "${ss_password}")
 	#remarkBase64=$(urlsafe_base64 "gfw-breaker [${ss_server_ip}]")
-	remarkBase64=$(urlsafe_base64 "账号更新 http://truth.atspace.eu/")
+	remarkBase64=$(urlsafe_base64 "账号更新 https://github.com/gfw-breaker/")
 	SSRbase64=$(urlsafe_base64 "${ss_server_ip}:${ss_server_port}:${SSRprotocol}:${ss_method}:${SSRobfs}:${SSRPWDbase64}/?remarks=${remarkBase64}")
 	SSRurl="ssr://${SSRbase64}"
 	qrencode -o ssr.png -s 2 "${SSRurl}"
